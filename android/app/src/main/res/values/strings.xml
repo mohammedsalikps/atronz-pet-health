@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Atronz Pet Health</string>
+    <string name="title_activity_main">Atronz Pet Health</string>
+    <string name="package_name">com.atronz.pethealth</string>
+    <string name="custom_url_scheme">com.atronz.pethealth</string>
+</resources>

@@ -1,0 +1,82 @@
+# --- Dependencies -----------------------------------------------------------
+node_modules/
+
+# --- Build output -----------------------------------------------------------
+dist/
+dist-ssr/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+
+# --- Environment / secrets --------------------------------------------------
+.env
+.env.*
+!.env.example
+*.local
+
+# --- Signing material (never commit) ----------------------------------------
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+keystore.properties
+signing.properties
+
+# --- Packaged app binaries (never commit) -----------------------------------
+*.apk
+*.aab
+*.aar
+*.ap_
+*.dex
+
+# --- Android: build output and machine-local config -------------------------
+# The native project itself IS tracked; only generated and local files are not.
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/captures/
+android/.cxx/
+android/.externalNativeBuild/
+# Regenerated on every `npx cap sync`
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+android/app/src/main/res/xml/config.xml
+android/capacitor-cordova-android-plugins/
+
+# --- iOS (not generated yet, guarded for later) -----------------------------
+ios/App/Pods/
+ios/App/build/
+ios/App/output/
+
+# --- Emulator / QA scratch output -------------------------------------------
+brand/android-qa/
+brand/preview/
+# Emulator QA harness: throwaway, and embeds a machine-local Android SDK path
+scripts/qa-driver.py
+scripts/qa-run.py
+
+# --- IDE --------------------------------------------------------------------
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# --- OS ---------------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Logs -------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
